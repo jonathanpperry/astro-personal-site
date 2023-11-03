@@ -1,0 +1,37 @@
+---
+import H1 from "../components/H1.astro";
+import Main from "../components/Main.astro";
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+---
+
+<Layout title="Blog | Perry's Blog">
+  <Main>
+    <H1 text="About page." />
+
+    <div class="m-12 text-center text-xl text-teal-900 font-bold">
+      <p>I'm a software engineer, poolplayer, and musician.</p>
+    </div>
+
+    <div class="flex flex-row justify-around w-100">
+      <Image
+        src="/mepic.png"
+        alt="mepic"
+        width={200}
+        height={200}
+        format="webp"
+      />
+      <div class="flex flex-col justify-evenly">
+        <h3 class="m-4 h3-4 text-l text-teal-900 font-bold">
+          I am a software engineer and programmer hailing from the Detroit,
+          Michigan area.
+        </h3>
+        <h3 class="m-4 h3-4 text-l text-teal-900 font-bold">I have been living in Austin, TX since 2023.</h3>
+        <h3 class="m-4 h3-4 text-l text-teal-900 font-bold">
+          I am currently pursuing a new opportunity, so if you are hiring, do
+          not hesitate to reach out via LinkedIn.
+        </h3>
+      </div>
+    </div>
+  </Main>
+</Layout>
